@@ -1,0 +1,149 @@
+body {
+    line-height:1;
+    background-image:url("lib2.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    
+}
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+/*-------------------------------------------------*/
+header
+{
+    color: black;
+    height:120px; 
+    width:auto;
+    background-color:rgb(24, 23, 23);
+}
+section
+{
+    margin-top:0px;
+    height:700px;
+    width:1500px;
+    
+}
+footer
+{
+    height:82px;
+    width:1500px;
+    background-color:rgb(255, 255, 255)
+}
+.logo
+{
+    float:left;
+    padding-left:50px;
+    line-height:120px;
+}
+li a
+{
+    color:cornsilk;
+    text-decoration: none;
+}
+
+nav
+{
+    font-size: large;
+    float:right;
+    word-spacing: 30px;
+    padding:20px;
+}
+nav li
+{
+    display: inline-block;
+    line-height: 80px;
+}
+
+.box
+{
+    color:cornsilk;
+    font-size: 35px; 
+    margin:250px 70px 70px 350px;
+    width: auto;
+    background-position: center;
+    background-color: opacity;
+    background-position: auto;
+    background-size: auto;   
+}
+/*---------------------student & admin login-----------------*/
+.total {
+    width:30%;
+    margin:200px 405px 100px auto;
+    background-color: white;
+    background-position: center;
+    font-size:14px;
+  }
+  /* Full-width inputs */
+  input[type=text], input[type=password] {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  /* Set a style for all buttons */
+  button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  /* Add a hover effect for buttons */
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Extra style for the cancel button (red) */
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+  }
+  
+  
+  /* The "Forgot password" text */
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+      display: block;
+      float: none;
+    }
+    .cancelbtn {
+      width: 100%;
+    }
+  }
+  
