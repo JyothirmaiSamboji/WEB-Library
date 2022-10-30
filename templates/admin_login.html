@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            student login
+        </title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+    </head>
+    <body>
+       <header>
+        <div class="logo">
+            <h1 style="color: white;font-size: 30px;">WEB LIBRARY</h1>
+        </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" id="home">HOME</a></li>
+                    <li><a href="" id="home">BOOKS</a></li>
+                    <li><a href="student_login.html" id="home">STUDENT-LOGIN</a></li>
+                    <li><a href="admin_login.html" id="home">ADMIN-LOGIN</a></li>
+                </ul>
+            </nav>
+       </header>
+       <section>
+        <form action="action_page.php" method="post">
+            <div class="total">
+            <div class="container1">
+              <label for="uname"><b>Admin-Name</b></label>
+              <input type="text" placeholder="Enter Username" name="uname" required>
+              </div>
+            <div class ="container2"
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+          
+              <button type="submit">Login</button>
+              <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+              </label>
+            </div>
+          
+            <div class="container" style="background-color:#f1f1f1">
+              <button type="button" class="cancelbtn">Cancel</button>
+              <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+            </div>
+          </form>
+       </section>
+       <footer>
+
+       </footer>
+    </body>
+</html>
