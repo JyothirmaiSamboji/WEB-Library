@@ -1,22 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <style>
-            #fp
-            {
-                color:blue;
-                font-size:large;
-                text-decoration:underline;
-            }
-            .fp:hover
-            {
-                text-decoration:underline;
-            }
-            #home
-            {
-                color:black;
-            }
-        </style>
         <title>
             student login
         </title>
@@ -34,24 +18,33 @@
                     <li><a href="index.html" id="home">HOME</a></li>
                     <li><a href="" id="home">BOOKS</a></li>
                     <li><a href="student_login.html" id="home">STUDENT-LOGIN</a></li>
-                    <li><a href="" id="home">ADMIN-LOGIN</a></li>
+                    <li><a href="admin_login.html" id="home">ADMIN-LOGIN</a></li>
                 </ul>
             </nav>
        </header>
        <section>
-        <div class="log_in">
-            <div class="login_box">
-                <h1 style="text-align:center;color:black">Login</h1><br>
-                <form name="login" action="" method="">
-                    <input type="text" name="username" placeholder="college Id" required=""><br><br>
-                    <input type="password" name="password" placeholder="Password" required=""><br><br>
-                    <button>Login</button>
-                </form><br><br>
-                <p style =text-align:center>
-                    <a href="" id="fp" >Forgot password</a>
-                </p>
+        <form action="action_page.php" method="post">
+            <div class="total">
+            <div class="container1">
+              <label for="uname"><b>Username</b></label>
+              <input type="text" placeholder="Enter Username" name="uname" required>
+              </div>
+            <div class ="container2"
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+          
+              <button type="submit">Login</button>
+              <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+              </label>
             </div>
-        </div>
+          
+            <div class="container" style="background-color:#f1f1f1">
+              <button type="button" class="cancelbtn">Cancel</button>
+              <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+            </div>
+          </form>
        </section>
        <footer>
 
