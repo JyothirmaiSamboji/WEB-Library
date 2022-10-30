@@ -31,16 +31,13 @@ hr {
     padding:0;
 }
 
-input, select {
-    vertical-align:middle;
-}
 /*-------------------------------------------------*/
 header
 {
     color: black;
-height:130px;
-width:auto;
-background-color:rgb(24, 23, 23);
+    height:120px; 
+    width:auto;
+    background-color:rgb(24, 23, 23);
 }
 section
 {
@@ -84,41 +81,69 @@ nav li
 {
     color:cornsilk;
     font-size: 35px; 
-    margin:250px 70px 70px 400px;
+    margin:250px 70px 70px 350px;
     width: auto;
     background-position: center;
-    background-color:black;
-    
+    background-color: opacity;
+    background-position: auto;
+    background-size: auto;   
 }
-/*---------------------student login-----------------*/
-section .log_in
-{
-    height:650px;
-
-    background-image:url("images/login.png");
-    background-size:700px 700px;
-    background-repeat:no-repeat;
-    background-position:center;
-    filter:blur(0.9);
-    
-}
-section .login_box {
-    height:340px;
-    width:390px;
-    margin-top: 0cm;
-    margin-bottom:70px; 
-    margin-left: 535px;
-    background-color:white;
-    font-size: 70px;
-    padding:20px;
-   font-size: 30px; 
-   text-align: center;
-}
-
-.login_box {
-    position: relative;
-    top : 100px;
-    opacity:0.9;
-}
-
-
+/*---------------------student & admin login-----------------*/
+.total {
+    width:30%;
+    margin:200px 405px 100px auto;
+    background-color: white;
+    background-position: center;
+    font-size:14px;
+  }
+  /* Full-width inputs */
+  input[type=text], input[type=password] {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  /* Set a style for all buttons */
+  button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  /* Add a hover effect for buttons */
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Extra style for the cancel button (red) */
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+  }
+  
+  
+  /* The "Forgot password" text */
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+      display: block;
+      float: none;
+    }
+    .cancelbtn {
+      width: 100%;
+    }
+  }
+  
