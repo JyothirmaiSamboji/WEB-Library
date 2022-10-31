@@ -1,0 +1,97 @@
+body {
+        line-height:1;
+        background-image:url("admin.webp");
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;      
+    }
+.logo
+    {
+        float:center;
+        
+        line-height:120px;
+    }
+.b{
+    font-size:25px;
+}
+.logoutLblPos{
+
+   position:fixed;
+   right:10px;
+   top:5px;
+   font-size:80px;
+}
+.btn{
+    height:40px;
+    background-color:rgb(200, 197, 197);
+    width:200px;
+    box-shadow:5px 5px 10px black;
+    border-radius: 0px 50px 50px 0px;
+    padding:15px; 
+    text-decoration: none;
+    color:black;  
+}
+.main1{
+       min-height: 100vh;
+       width: 100%;
+       background-image:
+       linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("admin.webp");
+       background-size: cover;
+       position: relative;
+       text-align: justify;
+       color: white;
+  }
+  h1{
+      text-align: center;
+      color: rgb(246, 245, 245);
+      font-size: 3.3rem;
+  }
+  label{
+      display: block;
+  }
+  .main1{
+      display: flex;
+      justify-content: center;
+  }
+  .login{
+      padding: 2rem;
+      margin-top: 1.5rem;
+      width: 20rem;
+  }
+  .input-field{
+      margin-top: 1rem;
+  }
+  .input-fielddiff{
+      margin-top: 1rem;
+  }
+  .input-fielddiff textarea{
+      background-color: white;
+      height: 5rem;
+      width: 100%;
+      color: black;
+  }
+  .input-field input{
+      background-color: white;
+      height: 1.5rem;
+      width: 100%;
+      color: black;
+  }
+  .login .submit{
+      background-color:rgb(185, 242, 193);
+      font-size: 1.2rem;
+      width: 20rem;
+      padding: .7rem;
+      margin-top: 1rem;
+      color: black;
+      border-radius: 30px;
+      border: none;
+  }
+  .submit:hover{
+      background-color: rgb(49, 191, 193);
+    }
+.table{
+    font-size: 28px;
+    height:400px;
+    width:600px;
+    
+}

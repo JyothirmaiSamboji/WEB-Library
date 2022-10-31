@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Books List</title>
+    <link rel="stylesheet" href="static/style1.css">
+    <style>
+        table, th, td {
+          border: 3px solid black;
+        }
+    </style>
+  </head>
+    <body>
+        <div class ="table">
+            <table align="center">
+                <caption><h3>BOOK DETAILS</h3></caption>
+            <tr>
+              {% for field in fields %}
+              <th bgcolor="white">{{field}}</th>
+              {% endfor %}
+              <th bgcolor="white">OPERATION</th>
+              
+
+            </tr>
+            {% for book in books %}
+            <tr>
+
+              {% for col in book %}
+              <td bgcolor="white">{{col}}</td>
+              {% endfor %}
+              <form action="/delete_book" method="post">
+                <input type="hidden" name="BOOK CODE" value="{{book[0]}}">
+               <td> <button type="submit">DELETE</button></td>
+              </form>
+              
+            </tr>
+            {% endfor %} 
+          </table> 
+        </div>
+    </body>
+</html>
