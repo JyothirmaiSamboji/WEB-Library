@@ -14,26 +14,12 @@
             <form method="post">
                 <div class="login">
                     <h1>User Details</h1>
+                    {% for field in fields %}
                     <div class="input-field">
-                        <label for="">User Name</label>
-                        <input type="text" name="USER NAME" placeholder="USER NAME">
+                        <label for="">{{field}}</label>
+                        <input type="text" name="{{field}}" placeholder="{{field}}">
                     </div>
-                    <div class="input-field">
-                        <label for="">Roll Number</label>
-                        <input type="text" name="ROLL NUMBER" placeholder="ROLL NUMBER">
-                    </div>
-                    <div class="input-field">
-                        <label for="">Department</label>
-                        <input type="text" name="DEPARTMENT" placeholder="DEPARTMENT">
-                    </div>
-                    <div class="input-field">
-                        <label for="">E-Mail</label>
-                        <input type="e-mail" name="E-MAIL" placeholder="E-MAIL">
-                    </div>
-                    <div class="input-field">
-                        <label for="">Password</label>
-                        <input type="password" name="PASSWORD" placeholder="PASSWORD">
-                    </div>
+                    {% endfor %}
                     <button class="submit">ADD</button>
                 </div>
             </form>

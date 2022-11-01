@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta name="viewport" content="with=device-width, initial-scale=1.0">
-    <title>Books List</title>
+    <title>User List</title>
     <link rel="stylesheet" href="static/style1.css">
     <style>
         table, th, td {
@@ -13,28 +13,25 @@
     <body>
         <div class ="table">
             <table align="center">
-                <caption><h3>BOOK DETAILS</h3></caption>
+                <caption><h3>USER DETAILS</h3></caption>
             <tr>
               {% for field in fields %}
               <th bgcolor="white">{{field}}</th>
               {% endfor %}
-              {% if user_type=="admin" %}
-              <th bgcolor="white">OPERATION</th>
-              {% endif %}
+              <th bgcolor="white">REMOVE</th>
+              
 
             </tr>
-            {% for book in books %}
+            {% for stu in students %}
             <tr>
 
-              {% for col in book %}
+              {% for col in stu %}
               <td bgcolor="white">{{col}}</td>
               {% endfor %}
-              {% if user_type=="admin" %}
-              <form action="/delete_book" method="post">
-                <input type="hidden" name="BOOK CODE" value="{{book[0]}}">
+              <form action="/delete_user" method="post">
+                <input type="hidden" name="USER ID" value="{{stu[0]}}">
                <td> <button type="submit">DELETE</button></td>
               </form>
-              {% endif %}
               
             </tr>
             {% endfor %} 
